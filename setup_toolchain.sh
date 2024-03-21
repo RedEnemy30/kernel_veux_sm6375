@@ -37,11 +37,11 @@ check_submodule https://github.com/cachiusa/aosp-kernel-build build
 git -C build checkout master
 git -C build submodule update --init --recursive
 
-check_submodule https://github.com/cachiusa/AnyKernel3 AnyKernel3
-git -C AnyKernel3 checkout veux
+#check_submodule https://github.com/cachiusa/AnyKernel3 AnyKernel3
+#git -C AnyKernel3 checkout veux
 
-check_submodule https://github.com/tiann/KernelSU KernelSU
-. KernelSU/kernel/setup.sh
+#check_submodule https://github.com/tiann/KernelSU KernelSU
+#. KernelSU/kernel/setup.sh
 
 if [[ ! -e usr/ramdisk.cpio ]]; then
   wget https://github.com/cachiusa/AnyKernel3/releases/download/1.0.0/ramdisk.7z -nv -O ramdisk.7z
