@@ -15,7 +15,7 @@ BUILDTOOLS_PREBUILT_BIN=build/build-tools/path/linux-x86
 DEFCONFIG=veux_defconfig
 SKIP_CP_KERNEL_HDR=1
 SKIP_EXT_MODULES=1
-BUILD_INITRAMFS=0
+BUILD_INITRAMFS=1
 
 inject_ramdisk() {
   ${KERNEL_DIR}/scripts/config --file ${OUT_DIR}/.config \
